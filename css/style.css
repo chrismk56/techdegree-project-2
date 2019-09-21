@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Oswald', 'Roboto';
+    src: url('webfont.eot');
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), 
+         url('webfont.woff2') format('woff2'),
+         url('webfont.woff') format('woff'), 
+         url('webfont.ttf')  format('truetype'), 
+         url('webfont.svg#svgFontName') format('svg'); 
+}
+
+body {
+    font-family: 'Roboto', 'Oswald', sans-serif;
+}
+
+main,footer,a {
+    color: rgb(68, 67, 67);
+}
+
+.main-header { 
+    background-color: #CBE7F7;
+    text-align: center;
+}
+
+.student-name {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+    
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:active { 
+    color: rgb(104, 104, 104);
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+ul li{
+    list-style-type: none;
+    background: #fff;
+    display: inline-block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    width: 85%;
+    
+}
+
+.profile-img {
+    width: 50%;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.profile-picture-div {
+    width: 50%;
+    margin:0 auto;
+    background-color: rgb(201, 201, 198);
+}
+
+.profile-txt { 
+    display: inline-block;
+    margin: 20px 0 50px;
+    font-size: 1em;
+    width: 70%;
+    color: rgb(133, 131, 131);
+    font-family: 'Oswald';
+}
+
+h3 {
+    font-family: 'Oswald';
+}
+
+main {
+    text-align: center;
+}
+
+img { 
+    width: 100%;
+}
+
+.headline {
+    margin: 50px 0 50px;
+    text-transform: uppercase;
+}
+
+.headline-contact {
+    margin: 30px 0 30px;
+    text-transform: uppercase;
+}
+
+.content-blocks p {
+    width: 70%;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.contact {
+    padding: 30px;
+
+}
+
+.horizontal-line {
+    background-color: #CBE7F7;
+    margin-bottom: 15px;
+}
+
+hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact, footer { 
+    background-color: #CBE7F7;
+    text-align: center;
+}
+
+.info {
+    margin-top: 30px;
+}
+
+
+footer {
+    padding-bottom: 30px;
+}
+
+.footer-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    display: none;
+}
+
+span a {
+    text-decoration: none;
+}
+
+
+.footer-name {
+   float: left;
+   font-weight: bold;
+}
+
+.back-to-top {
+   float: right;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media (min-width : 768px) {
+    
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.student-name {
+    padding-top: 30px;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.main-nav li {
+    width: auto;
+    background: none;
+    text-transform: uppercase;
+}
+
+.profile-picture-div {
+    width: 45%;
+    float: right;
+    background-color: rgb(201, 201, 198);
+}
+
+
+
+.profile-txt {
+    width: 50%;
+    font-size: 1.2em;
+    text-align: left;
+    float: left;
+    margin: 0;
+}
+
+.content-blocks {
+    float: left;
+    width: 50%;
+    padding:5px;
+}
+
+.skills {
+    margin-bottom: 30px;
+}
+
+.skills-block {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+footer {
+    padding-top: 10px;
+}
+
+.contact p {
+    width: 50%;
+    display: inline-block;
+}
+
+.back-to-top {
+    display: none;
+}
+
+.footer-wrap {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.footer-name {
+    float: left;
+    padding: 10px;
+}
+
+
+.footer-nav {
+    display: block;
+    float: right;
+}
+
+
+.footer-nav li {
+    background: none;
+    width: auto;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.footer-nav a {
+    text-decoration: none;
+}
+
+
+}
+
+
+@media (min-width : 1024px) {
+
+body {
+    background-color: #CBE7F7;
+}   
+
+
+.header-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.student-name {
+    float: left;
+    font-size: 2em;
+
+}
+
+.main-nav {
+    float: right;
+    padding-top: 30px;
+}
+
+.container {
+    padding-top: 15px;
+}
+
+.profile-picture-div {
+    width: 45%;
+    padding: 25px;
+    margin-right: 15px;
+}
+
+.profile-img {
+    width: 50%;
+    border-radius: 50%;
+    padding: 0;
+    transition: all .5s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.profile-txt {
+    width: 50%;
+    font-size: 1.2em;
+    text-align: left;
+    float: left;
+}
+
+.wrap {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.portfolio {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content-blocks {
+    width: 33.3%;
+}
+
+.content-blocks img {
+    transition: all 1s;
+}
+
+.content-blocks img:hover {
+    transform: scale(1.1);
+}
+
+.skills-block img {
+    transition: all 1s;
+}
+
+.skills-block img:hover {
+    transform: translate(5px);
+}
+
+.content-blocks:nth-child(3n - 3){
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.skills-block {
+    width: 25%;
+    padding: 5px 5px 40px 5px;
+}
+
+}
